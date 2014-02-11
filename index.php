@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Plex Media Manager</title>
-
+    
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script> 
+	
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 	
 	<style>
 				
@@ -63,18 +70,13 @@
 			<h1>Plex Media Manager</h1>
 			<p class="lead">
 				Use this page to manage newly downloaded media files.<br> 
-				All media files listed here are completed video torrents on Sam-PowerMac.
+				All media files listed here are downloaded video torrents on Sam-PowerMac.
 			</p>
 		</div>
 		
-		<?php include_once("lib/media.php"); ?>
+		<?php include_once("php/get_media.php"); ?>
 
     </div><!-- /.container -->
     
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/pmm.js"></script>
   </body>
 </html>
