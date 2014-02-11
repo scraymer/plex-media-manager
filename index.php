@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Plex Media Manager</title>
     
+    <!-- iOS WebApp settings -->
+    <link rel="apple-touch-icon" href="img/p-icon.png">
+    <link rel="apple-touch-startup-image" href="img/p-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="http://malsup.github.com/jquery.form.js"></script> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
