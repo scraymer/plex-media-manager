@@ -1,5 +1,7 @@
 <?php
 
+include_once("../config.php");
+
 function add_media () {
 	if ($_POST['type'] == 'movie')
 		return add_movie($_POST['path'], $_POST['mTitle'], $_POST['mYear']);
@@ -11,7 +13,7 @@ function add_media () {
 
 function add_movie ($path, $title, $year) {
 	
-	$media_dir = "/Volumes/Sam-PowerMac/media/movies";
+	$media_dir = $config['media_dir_movies'];
 	
 	$dirname = dirname($path);
 	$filename = basename($path);
@@ -56,7 +58,7 @@ function add_movie ($path, $title, $year) {
 
 function add_series ($path, $title, $season, $episode) {
 	
-	$media_dir = "/Volumes/Sam-PowerMac/media/tv-shows";
+	$media_dir = $config['media_dir_series'];
 	
 	$dirname = dirname($path);
 	$filename = basename($path);
