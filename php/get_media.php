@@ -1,5 +1,7 @@
 <?php
 
+include_once("../config.php");
+
 function get_media ($dir, $ext) {
 
 	$files = Array();
@@ -31,8 +33,8 @@ function get_media ($dir, $ext) {
 
 function display_media () {
 	
-	$media_dir = '/Users/sam/Downloads/uTorrent/complete';
-	$media_extensions = 'avi,mkv,mp4,mov';
+	$media_dir = $config['media_dir'];
+	$media_extensions = $config['media_extensions'];
 	
 	foreach (get_media($media_dir, $media_extensions) as $key => $path) {
 		
